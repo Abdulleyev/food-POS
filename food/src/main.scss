@@ -1,5 +1,4 @@
 .main {
-  border-radius: 16px;
   display: flex;
   background-color: #273035;
   width: 100%;
@@ -70,13 +69,15 @@
               border: 1px solid #393C49;
               width: 220px;
               height: 48px;
+              padding-left: 35px;
               border-radius: 8px;
               background-color: #2D303E;
+              color: white;
               &::placeholder{
                 font-size: 14px;
                 line-height: 140%;
                 color: #ABBBC2;
-                padding-left: 30px;
+
               }
             }
           }
@@ -252,6 +253,7 @@
     }
 
     .content {
+      overflow-y: auto;
       .content-child {
         margin-top: 27px;
 
@@ -326,6 +328,7 @@
             height: 48px;
             background-color: #2D303E;
             border: none;
+            color: white;
             &:focus{
               box-shadow: none;
             }
@@ -353,6 +356,7 @@
     }
 
     .right-card-footer {
+
       .footer-one {
         display: flex;
         justify-content: space-between;

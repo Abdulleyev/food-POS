@@ -1,6 +1,6 @@
 import React from 'react';
 import {AvField, AvForm} from 'availity-reactstrap-validation';
-
+import "./api";
 const RightCard = () => {
     return (
         <div className="right-card">
@@ -97,7 +97,7 @@ const RightCard = () => {
                     <div className="search-delete-order">
                         <input type="text" className="form-control" placeholder="Order Note..."/>
 
-                        <button type="button" className="btn btn-style"><img src="/icons/delete.png" alt=""/></button>
+                        <button type="button" className="btn btn-style"><img src={api.js.image} alt=""/></button>
                     </div>
                 </div>
             </div>

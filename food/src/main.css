@@ -1,5 +1,4 @@
 .main {
-  border-radius: 16px;
   display: flex;
   background-color: #273035;
   width: 100%;
@@ -65,14 +64,15 @@
   border: 1px solid #393C49;
   width: 220px;
   height: 48px;
+  padding-left: 35px;
   border-radius: 8px;
   background-color: #2D303E;
+  color: white;
 }
 .main .middle-card .header .header-right .form-group .form-control::placeholder {
   font-size: 14px;
   line-height: 140%;
   color: #ABBBC2;
-  padding-left: 30px;
 }
 .main .middle-card .navbar {
   padding: 0;
@@ -99,6 +99,9 @@
   height: 90px;
   border-radius: 8px;
   background-color: white;
+  z-index: 1;
+  top: 58px;
+  right: 49px;
 }
 .main .middle-card .dine-in .small-box {
   position: absolute;
@@ -218,6 +221,9 @@
 .main .right-card .line {
   border: 1px solid #393C49;
   margin: 24px 0;
+}
+.main .right-card .content {
+  overflow-y: auto;
 }
 .main .right-card .content .content-child {
   margin-top: 27px;

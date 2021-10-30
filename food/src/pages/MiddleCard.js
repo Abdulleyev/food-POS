@@ -30,7 +30,7 @@ const MiddleCard = () => {
                 </ul>
             </nav>
             <div className="line"></div>
-            <div className="dine-in" onClick={toggle}>
+            <div className="dine-in" >
                 <h4>Choose Dishes</h4>
                 <div className={ Open ? "d-block " : "d-none"}>
                     <div className="select-box">
@@ -38,7 +38,7 @@ const MiddleCard = () => {
                     </div>
 
                 </div>
-                <div className="dine-in-right">
+                <div className="dine-in-right" onClick={toggle}>
                     <img src="/icons/arrow-down-s-line.png" alt=""/>
                     <span>Dine In</span>
                 </div>
