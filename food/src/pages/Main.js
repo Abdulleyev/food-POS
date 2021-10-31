@@ -8,7 +8,7 @@ const Main = () => {
         <div className="main">
             <Sidebar/>
             <MiddleCard/>
-            <RightCard/>
+            {/*<RightCard/>*/}
         </div>
     );
 };
