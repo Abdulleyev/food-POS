@@ -39,7 +39,7 @@ const RightCard = (props) => {
                             </div>
                         </div>
                         <div className="food-price">
-                            <div pro={props.count} set={props.setCount} className={`box`} >{count}</div>
+                            <div  className={`box `} >{count}</div>
                             <h3>$4.58</h3>
                         </div>
                     </div>
