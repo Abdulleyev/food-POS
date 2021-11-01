@@ -5,6 +5,7 @@ import RightCard from "./RightCard";
 const MiddleCard = (props) => {
     console.log(props);
     const [Open, isOpen] = useState(false);
+
     const toggle = () => {
         isOpen(!Open);
     }
@@ -62,7 +63,7 @@ const MiddleCard = (props) => {
 
                     {
                         stockData.map(item => (
-                            <div className="food-cards-child" onClick={() => sendItem(item)}>
+                            <div className="food-cards-child" onClick={()=>RightCard.counter}>
                                 <img src={item.img} alt="" />
                                 <span>{item.title}</span>
                                 <p>$ {item.price}</p>

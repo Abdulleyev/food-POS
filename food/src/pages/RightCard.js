@@ -4,13 +4,12 @@ import {AvField, AvForm} from 'availity-reactstrap-validation';
 const RightCard = (props) => {
     const [count, setCount] = useState(0);
 
+    const counter=()=>{
+        setCount(count+1);
+    }
 
     console.log(props.setData)
 
-    useEffect(() => {
-
-        alert(props.setData)
-    }, [])
     return (
         <div className="right-card" >
 
@@ -47,7 +46,7 @@ const RightCard = (props) => {
 
                         <input type="text" className="form-control" placeholder="Please, just a little bit spicy only."/>
 
-                        <button type="button" onClick={() => setCount(count - 1)}  className="btn btn-style"><img src="/icons/delete.png" alt=""/></button>
+                        <button type="button" onClick={() => setCount(count>0?count - 1:count)}  className="btn btn-style"><img src="/icons/delete.png" alt=""/></button>
                     </div>
                 </div>
                 <div className="content-child">

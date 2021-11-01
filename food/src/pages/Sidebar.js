@@ -1,34 +1,34 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 const Sidebar = () => {
     return (
         <div className="sidebar">
+            <img src="/icons/logo.png" alt="logo.png"/>
             <ul className="nav">
-                <li className="nav-item">
-                    <button type="button" className="style-btn "><img src="/icons/home.png" alt=""/></button>
+                <li className="nav-item active">
+                    <Link to="/" className="nav-link "><span className="icon icon-home"/></Link>
                 </li>
                 <li className="nav-item">
-                    <button type="button" className="style-btn "><img src="/icons/icont.png" alt=""/></button>
+                    <Link to="/" className="nav-link"><span className="icon icon-home"/></Link>
                 </li>
                 <li className="nav-item">
-                    <button type="button" className="style-btn "><img src="/icons/home.png" alt=""/></button>
+                    <Link to="/" className="nav-link"><span className="icon icon-home"/></Link>
                 </li>
                 <li className="nav-item">
-                    <button type="button" className="style-btn "><img src="/icons/home.png" alt=""/></button>
-                </li>
-                <li className="nav-item">
-                    <button type="button" className="style-btn "><img src="/icons/home.png" alt=""/></button>
-                </li>
-                <li className="nav-item">
-                    <button type="button" className="style-btn "><img src="/icons/home.png" alt=""/></button>
-                </li>
-                <li className="nav-item">
-                    <button type="button" className="style-btn "><img src="/icons/home.png" alt=""/></button>
-                </li>
-                <li className="nav-item">
-                    <button type="button" className="style-btn "><img src="/icons/home.png" alt=""/></button>
+                    <Link to="/" className="nav-link"><span className="icon icon-home"/></Link>
                 </li>
 
+
+                <li className="nav-item">
+                    <Link to="/" className="nav-link"><span className="icon icon-home"/></Link>
+                </li>
+                <li className="nav-item">
+                    <Link to="/" className="nav-link"><span className="icon icon-home"/></Link>
+                </li>
+                <li className="nav-item">
+                    <Link to="/" className="nav-link"><span className="icon icon-home"/></Link>
+                </li>
 
             </ul>
         </div>
